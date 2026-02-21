@@ -3,8 +3,23 @@ document.getElementById('login-btn').addEventListener('click', function(){
    const inputNumber = document.getElementById('number-input');
    const contactNumber = inputNumber.value;
    console.log(contactNumber);
+
    //2:get the pin input
+   const inputPin=document.getElementById('input-pin');
+   const pin = inputPin.value;
+   console.log(pin); 
+
    //3:match pin and mobile number
-   //3.1: true..>> alert>homepage
-   //3.2: false..> alert>return
+   if (contactNumber=='01729078472' && pin=='1234'){
+      //3.1: true..>> alert>homepage
+      alert('login successfull')
+
+      window.location.assign("./home.html");
+   }
+   else{
+      //3.2: false..> alert>return
+      alert('login feild')
+      return;
+   }
+   
 })
