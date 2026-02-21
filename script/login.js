@@ -12,13 +12,15 @@ document.getElementById('login-btn').addEventListener('click', function(){
    //3:match pin and mobile number
    if (contactNumber=='01729078472' && pin=='1234'){
       //3.1: true..>> alert>homepage
-      alert('login successfull')
+      alert('login successfull');
 
-      window.location.assign("./home.html");
+      window.location.assign("/home.html");
+
+      // window.location.assign("./home.html");
    }
    else{
       //3.2: false..> alert>return
-      alert('login feild')
+      alert("login feild");
       return;
    }
    
