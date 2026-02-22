@@ -55,11 +55,11 @@
     <!-- All Card  -->
         <div class="buttons grid grid-cols-3 gap-3">
 
-            <button id="add-money" class="btn flex-col h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly('addmoney')" class="btn flex-col h-full py-4 btn-primary btn-soft">
                 <img src="./assets/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
-            <button id="cashout" class="btn flex-col h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly('cashout')" class="btn flex-col h-full py-4 btn-primary btn-soft">
                 <img src="./assets/opt-2.png" alt="">
                 <p>Cashout</p>
             </button>
@@ -75,7 +75,7 @@
                 <img src="./assets/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
-            <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+            <button onclick="showOnly('history')" class="btn flex-col h-full py-4 btn-primary btn-soft">
                 <img src="./assets/opt-6.png" alt="">
                 <p>Transactions</p>
             </button>
@@ -83,7 +83,7 @@
     </section>
 
     <!-- Add Money Section  -->
-     <section id="addmoney" class="w-11/12 mx-auto py-5">
+     <section id="addmoney" class="w-11/12 mx-auto py-5 hidden">
         <h2 class="text-xl font-bold mb-5">Add Money</h2>
         <div class="card bg-base-100 w-full  shadow  rounded-2xl">
                 <div class="card-body">
@@ -129,12 +129,24 @@
                         <input id="cashout-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 w-full" placeholder="Enter 4 digit pin number" />
                         <br>
                         
-                        <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">WithDraw Money</button>
+                        <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">Cashout Money</button>
                     </fieldset>
                 </div>
                 </div>
                 
             </section>
+
+     <!-- Transactions section  -->
+          <section id="history" class="w-11/12 mx-auto py-5 hidden ">
+            <h2 class="text-xl font-bold mb-5"> Transaction</h2>
+            <div class="space-y-5" id="history-container">
+                <!-- <div class="transaction-card p-5 bg-base-100">
+
+                </div> -->
+
+            </div>
+          </section>   
+
             <script src="./script/machine.js"></script>
             <script src="./script/addMoney.js"></script>
             <script src="./script/cashout.js"></script>

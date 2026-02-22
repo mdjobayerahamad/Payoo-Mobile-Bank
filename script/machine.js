@@ -23,13 +23,17 @@ function getBalance(){
 
 //   machine id > hide all > show id 
 function showOnly(id){
-    const addmoney= document.getElementById('add-money');
+    const addmoney= document.getElementById('addmoney');
     const cashout = document.getElementById('cashout');
+    const history = document.getElementById('history');
+    // console.log(`addmoney-${addmoney}, Cashout-${cashout}`);
 
     // sobaike hide kore Dao 
  addmoney.classList.add('hidden');
- cashout.classList.add('guddeb');
-}  
+ cashout.classList.add('hidden');
+ history.classList.add('hidden');
+
 // id owala element ke tomi show koro 
 const selected = document.getElementById(id);
-selected.classList.remove('hhidden');
+selected.classList.remove('hidden');
+}
