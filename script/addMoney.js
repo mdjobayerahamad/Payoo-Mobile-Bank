@@ -14,5 +14,16 @@ if(accon.length != 11){
 }
 
 //3: get ammount 
+const amount = getValueFromInput("add-money-amount");
+const newBalance = getBalance()+Number(amount);
 
+const pin = getValueFromInput('add-money-pin');
+if(pin=='1234'){
+alert('add Money sucess')
+setBalance(newBalance);
+}
+else{
+    alert('invalid pin');
+    return;
+}
 });

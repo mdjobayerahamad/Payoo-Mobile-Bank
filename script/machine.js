@@ -20,3 +20,16 @@ function getBalance(){
         const balanceElement = document.getElementById('balance');
         balanceElement.innerText = value;
     }
+
+//   machine id > hide all > show id 
+function showOnly(id){
+    const addmoney= document.getElementById('add-money');
+    const cashout = document.getElementById('cashout');
+
+    // sobaike hide kore Dao 
+ addmoney.classList.add('hidden');
+ cashout.classList.add('guddeb');
+}  
+// id owala element ke tomi show koro 
+const selected = document.getElementById(id);
+selected.classList.remove('hhidden');
